@@ -172,3 +172,114 @@ body
     width: 30%;
     cursor: pointer;
 }
+
+
+/*patients section 1*/
+
+.patients
+{
+  padding: 5% 0 ;
+}
+
+
+.patient-img
+{
+  width: 30%;
+  border: solid 1px #aa0000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  padding: 5px;
+  margin: 0 auto;
+}
+.patient-img::before
+{
+  content: "";
+  position: absolute;
+  border-top: solid 1px black;
+  border-width: 1px;
+  left: -130px;
+  right: 102px;
+  top: 50%;
+  margin: auto;
+}
+.patient-img::after
+{
+  content: "";
+  position: absolute;
+  border-top: solid 1px black;
+  border-width: 1px;
+  right: -130px;
+  left: 102px;
+  top: 50%;
+  margin: auto;
+}
+.patient-img img
+{
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.patient-card
+{
+  padding: 8px;
+  position: relative;
+  transition-duration: 0.8s;
+}
+.patient-card:hover
+{
+  background-color: rgba(0,0,0,0.5);
+}
+.patient-overlay
+{
+  position: absolute;
+  top:102%;
+  left: 0;
+  right: 10%;
+  width: 80%;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 10px;
+  transition-duration: 0.9s;
+  transition-delay: 0.1s;
+  transition-property: all;
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform:scale(0,0);
+  -webkit-transform:scale(0,0);
+  -moz-transform:scale(0,0);
+  -ms-transform:scale(0,0);
+  -o-transform:scale(0,0);
+}
+
+.patient-card:hover .patient-overlay
+{
+  top:50%;
+  opacity: 1;
+  transform:scale(1.01,1.01);
+  -webkit-transform:scale(1.01,1.01);
+  -moz-transform:scale(1.01,1.01);
+  -ms-transform:scale(1.01,1.01);
+  -o-transform:scale(1.01,1.01);
+}
+.patient-data
+{
+  padding: 10px 5px;
+}
+
+.icofont-blood-drop
+{
+  color: red;
+  font-size: 20px;
+}
