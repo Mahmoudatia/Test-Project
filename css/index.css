@@ -1,84 +1,70 @@
-/*  start about us text and visual items  */
-.container .text-area p
-{
-	font-family: 'Changa', sans-serif;
-	color: #000;
-	line-height: 2;
-	font-size: 28px;
-}
-/*end  about us text and visual items*/
 
-
-/*Start Footer*/
-footer
+.nav
 {
-	background-image: url(../imgs/Path%20footer.svg);
-	background-size: cover;
-	color: #fff;	
+	background-color: #ff727285;
+	align-items: center
 }
-.overlay-footer
+.nav li a 
 {
-	background-color: #3b39708a;
-	padding: 80px 0 80px ;
+	text-decoration: none;
+	color: red;
 	
 }
-footer textarea{
-	width: 300px;
-	height: 200px;
-	resize: none;
-	border-radius: 20px;
-	font-size: 18px;
+
+.profile
+{
+	background-color: #F24D4D;
+	text-align: center
+}
+.profile .prof-avatar img 
+{
+	border-radius: 30%
+}
+.profile .prof-info
+{
+	text-align: center;
+	color: #FFF;
 	font-family: 'Changa', sans-serif;
 }
-.btn-hamdy
+.profile .prof-info h2 
 {
-	background-color: transparent;
+	font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+}
+.profile .prof-info h3
+{
 	font-size: 20px;
-	
+    font-weight: bold;
 }
-.btn-hamdy:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle{
-	color: #fff;
-    background-color: #50649A;
-    border-color: #50649A;
-	font-family: 'Changa', sans-serif;
-	outline: none;
-
-}
-footer .btn-send
-{	
-	margin-top: 50px;
-    background-color: #E50707;
-    color: #F1F1FB;
-    font-size: 20px;
-    padding: 10px 30px;
-    border-radius: 32px;
-	font-weight: bolder;
-	margin-right: 188px;	
-}
-footer .btn-send:hover{
-	background-color: #D2444C;
-
-}
-footer .help
+.profile .prof-info h4
 {
-	color: #E50707;
-	font-family: 'Changa', sans-serif;
-	text-shadow: 2px 2px 3px #333;
+	font-size: 16px;
 }
-footer input {
-	font-family: 'Changa', sans-serif;
-}
-footer p
+.profile .prof-setting
 {
-	line-height: 2;
-	font-size: 20px;
+	color:#FFF ;
 }
-.icon-social  a{
-	color: #fff;
-}
-
-.icon-social  i {
-	padding: 10px;
+.profile .prof-setting i 
+{
 	cursor: pointer;
 }
-/*End Footer*/
+
+.card img 
+{
+	width: 60px;
+	border-radius: 50%;
+}
+.card .card-title
+{
+	cursor: pointer
+}
+.card h5 
+{
+	color: red
+}
+.card 
+{
+	background-color: #FEE8F9;
+	border:1px solid #FFF
+}
