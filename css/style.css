@@ -193,7 +193,7 @@ body
   -o-border-radius: 50%;
   position: relative;
   padding: 5px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .patient-img::before
 {
@@ -255,13 +255,13 @@ body
 .patient-overlay
 {
   position: absolute;
-  top:102%;
+  top:105%;
   left: 0;
   right: 10%;
   width: 80%;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
-  padding: 10px;
+  padding: 25px 5px;
   transition-duration: 0.9s;
   transition-delay: 0.1s;
   transition-property: all;
@@ -277,10 +277,14 @@ body
   -ms-transform:scale(0,0);
   -o-transform:scale(0,0);
 }
-
+.patient-overlay >div > button
+{
+  padding: 10px 15px;
+  color: #fff;
+}
 .patient-card:hover .patient-overlay
 {
-  top:50%;
+  top:70%;
   opacity: 1;
   transform:scale(1.01,1.01);
   -webkit-transform:scale(1.01,1.01);
@@ -292,9 +296,9 @@ body
 {
   padding: 10px 5px;
 }
-
-.icofont-blood-drop
+.patient-data >p >i
 {
   color: red;
   font-size: 20px;
+  margin: 0 0 0 10px;
 }
