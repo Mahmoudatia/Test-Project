@@ -3,8 +3,8 @@
 //loading start function
 $(document).ready(function(){
     $("#loading").fadeOut(2000);
-    $(".sk-cube-grid").fadeOut(2000 , function(){
-        $("html").css("overflow" , "auto");
+    $("#ecg").fadeOut(2000 , function(){
+        $("body").css("overflow" , "auto");
     })
 })
     
