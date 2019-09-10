@@ -6,6 +6,9 @@ body
     overflow: hidden;
 }
 
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
 /*start of loading screen*/
 #loading
 {
@@ -19,7 +22,9 @@ body
 }
 /*end of loading screen*/
 
-
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
 /*start of loading logo*/
 #monitor {
   padding: 0;
@@ -67,21 +72,22 @@ body
 /*end of loading logo*/
 
 
-
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
 /*start of navbar*/
-.navbar-brand
+.navbar
 {
-    position: relative;
+  background-color: rgb(221, 103, 103);
 }
+.navbar-brand {position: relative;}
 #wrapper 
 {
-    position: absolute;
-    animation: pulse 1s infinite;
-    top: 32%;
-    right: 137%;
+  position: absolute;
+  animation: pulse 1s infinite;
+  top: 32%;
+  right: 137%;
 }
-
-
 #pulsingheart 
 { 
   position: relative; 
@@ -103,7 +109,6 @@ body
   transform-origin: 0 100%;
   animation:pulsecolor 1s infinite;
 } 
-
 #pulsingheart:after 
 { 
   left: 0; 
@@ -111,22 +116,29 @@ body
   transform-origin :100% 100%;
   animation:pulsecolor 1s infinite;
 }
-
 @keyframes pulse 
 {
-    10% {transform: scale(1.1)}
+  10% {transform: scale(1.1)}
   20% {transform: scale(1)}
   50% {transform: scale(1.1)}
   100% {transform: scale(1.1)}
 }
-
 @keyframes pulsecolor 
 {
   10% {background: #dd0000}
 }
+.nav-item > button
+{
+  padding: 6px 12px 6px;
+  border : none;
+  margin: 1px;
+}
 /*end of navbar*/
 
-
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*start of header*/
 .header-data
 {
     margin: 10% 0 0 0;
@@ -137,33 +149,41 @@ body
 }
 .header-content > p
 {
-    font-size: 30px;
+  font-size: 30px;
+  margin-bottom: 5%;
 }
 .header-btns
 {
     margin-top: 5%;
 }
-
+.header-btns
+{
+margin: 40px 0 0 0;
+}
 .header-btns > button
 {
-    font-size: 20px;
-    margin: 0 10px;
-}
-.dark-mode img
-{
-    width: 30%;
-    cursor: pointer;
+  font-size: 20px;
+  margin: 0 15px;
+  padding: 8px 30px 11px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: #F7C7C7;
 }
 
+/*end of header*/
 
+
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
+/*. . . . . .. . . .. . . ..  . . . .*/
 /*patients section 1*/
-
-.patients
-{
-  padding: 5% 0 ;
-}
-
-
+.patients {padding: 5% 0;}
+.patients-content > h3 {color: red;}
+.patients-number {color: red;}
 .patient-img
 {
   width: 30%;
@@ -191,7 +211,6 @@ body
 }
 .patient-card:hover .patient-img::before
 {
-
   left: -130px;
   right: 260px;
 }
@@ -209,7 +228,6 @@ body
 }
 .patient-card:hover .patient-img::after
 {
-
   right: -130px;
   left: 260px;
 }
@@ -230,10 +248,7 @@ body
   transition-duration: 0.8s;
   overflow: hidden;
 }
-.patient-card:hover
-{
-  background-color: rgba(0,0,0,0.5);
-}
+.patient-card:hover {background-color: rgba(0,0,0,0.5);}
 .patient-overlay
 {
   position: absolute;
