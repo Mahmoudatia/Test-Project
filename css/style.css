@@ -149,12 +149,12 @@ body
 }
 .header-content > p
 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 5%;
 }
 .header-btns
 {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .header-btns
 {
@@ -183,7 +183,7 @@ margin: 40px 0 0 0;
 /*patients section 1*/
 .patients {padding: 5% 0;}
 .patients-content > h3 {color: red;}
-.patients-number {color: red;}
+.patients-number {color: red; font-size: 25px}
 .patient-img
 {
   width: 30%;
@@ -298,4 +298,36 @@ margin: 40px 0 0 0;
   color: red;
   font-size: 20px;
   margin: 0 0 0 10px;
+}
+
+
+
+.main-content {
+  position: relative;
+}
+.main-content .owl-theme .custom-nav {
+  position: absolute;
+  top: 35%;
+  left: -100px;
+  right: -100px;
+}
+.main-content .owl-theme .custom-nav .owl-prev,
+.main-content .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.main-content .owl-theme .custom-nav .owl-prev i,
+.main-content .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.main-content .owl-theme .custom-nav .owl-prev {
+  left: 0;
+}
+.main-content .owl-theme .custom-nav .owl-next {
+  right: 0;
 }

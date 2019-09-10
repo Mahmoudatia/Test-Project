@@ -14,9 +14,16 @@ $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
     rtl:true,
     loop:true,
-    margin:10,
+    margin:15,
     nav:true,
+    autoplay : true,
+    navigation: true,
     center:true,
+    navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.main-content .custom-nav',
     responsive:{
         0:{
             items:1
