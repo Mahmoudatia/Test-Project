@@ -17,8 +17,8 @@ $('.owl-carousel').owlCarousel({
     margin:15,
     nav:true,
     autoplay : true,
+    autoplaySpeed:250,
     navigation: true,
-    center:true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
